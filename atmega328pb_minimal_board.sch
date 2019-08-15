@@ -1,0 +1,314 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-AU U1
+U 1 1 5D579FFC
+P 4020 2925
+F 0 "U1" H 4020 1336 50  0000 C CNN
+F 1 "ATmega328PB-AU" H 4020 1245 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 4020 2925 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 4020 2925 50  0001 C CNN
+	1    4020 2925
+	1    0    0    -1  
+$EndComp
+Text GLabel 4020 1340 1    50   Input ~ 0
+VCC
+Text GLabel 4020 4675 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4020 4675 4020 4425
+Text GLabel 4680 2325 2    50   Input ~ 0
+XTAL1
+Text GLabel 4680 2425 2    50   Input ~ 0
+XTAL2
+Wire Wire Line
+	4620 2325 4680 2325
+Wire Wire Line
+	4680 2425 4620 2425
+Wire Wire Line
+	4020 1425 4020 1380
+Text GLabel 6890 2370 0    50   Input ~ 0
+MISO
+Text GLabel 6890 2270 0    50   Input ~ 0
+SCK
+Text GLabel 7560 1970 2    50   Input ~ 0
+VCC
+Text GLabel 6880 1970 0    50   Input ~ 0
+MOSI
+Text GLabel 7560 2370 2    50   Input ~ 0
+GND
+Text GLabel 4680 2225 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	4680 2225 4620 2225
+Text GLabel 4680 2125 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	4680 2125 4620 2125
+Text GLabel 4680 2025 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	4680 2025 4620 2025
+Text GLabel 4695 3225 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	4695 3225 4620 3225
+$Comp
+L Device:Crystal Y1
+U 1 1 5D5836B2
+P 7125 3275
+F 0 "Y1" H 7125 3543 50  0000 C CNN
+F 1 "16MHz" H 7125 3452 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 7125 3275 50  0001 C CNN
+F 3 "~" H 7125 3275 50  0001 C CNN
+	1    7125 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5D584701
+P 6915 3585
+F 0 "C3" H 7007 3631 50  0000 L CNN
+F 1 "22pF" H 7007 3540 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6915 3585 50  0001 C CNN
+F 3 "~" H 6915 3585 50  0001 C CNN
+	1    6915 3585
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5D5848D8
+P 7385 3585
+F 0 "C4" H 7477 3631 50  0000 L CNN
+F 1 "22pF" H 7477 3540 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7385 3585 50  0001 C CNN
+F 3 "~" H 7385 3585 50  0001 C CNN
+	1    7385 3585
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 3275 6915 3275
+Wire Wire Line
+	6915 3275 6915 3485
+Wire Wire Line
+	7275 3275 7385 3275
+Text GLabel 7165 3830 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6915 3685 7165 3685
+Wire Wire Line
+	7165 3685 7165 3830
+Wire Wire Line
+	7165 3685 7385 3685
+Connection ~ 7165 3685
+Wire Wire Line
+	7385 3275 7385 3485
+Text GLabel 6915 3100 1    50   Input ~ 0
+XTAL1
+Text GLabel 7385 3110 1    50   Input ~ 0
+XTAL2
+Wire Wire Line
+	7385 3110 7385 3275
+Connection ~ 7385 3275
+Wire Wire Line
+	6915 3100 6915 3275
+Wire Wire Line
+	6915 3275 6920 3275
+Connection ~ 6915 3275
+Text GLabel 7180 4415 1    50   Input ~ 0
+VCC
+Text GLabel 7180 4855 3    50   Input ~ 0
+RESET
+$Comp
+L Device:R_Small R1
+U 1 1 5D588FD5
+P 7180 4650
+F 0 "R1" H 7239 4696 50  0000 L CNN
+F 1 "10K" H 7239 4605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 7180 4650 50  0001 C CNN
+F 3 "~" H 7180 4650 50  0001 C CNN
+	1    7180 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7180 4415 7180 4550
+Wire Wire Line
+	7180 4750 7180 4855
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5D58D1E0
+P 7130 1090
+F 0 "J1" H 7158 1066 50  0000 L CNN
+F 1 "Power Connector" H 7158 975 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7130 1090 50  0001 C CNN
+F 3 "~" H 7130 1090 50  0001 C CNN
+	1    7130 1090
+	1    0    0    -1  
+$EndComp
+Text GLabel 6655 1040 0    50   Input ~ 0
+VCC
+Text GLabel 6650 1240 0    50   Input ~ 0
+GND
+$Comp
+L Device:C_Small C2
+U 1 1 5D58EC43
+P 6765 1140
+F 0 "C2" H 6720 1355 50  0000 L CNN
+F 1 "100nF" H 6685 950 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6765 1140 50  0001 C CNN
+F 3 "~" H 6765 1140 50  0001 C CNN
+	1    6765 1140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1240 6765 1240
+Wire Wire Line
+	6765 1240 6860 1240
+Wire Wire Line
+	6860 1240 6860 1190
+Wire Wire Line
+	6860 1190 6930 1190
+Connection ~ 6765 1240
+Wire Wire Line
+	6655 1040 6765 1040
+Wire Wire Line
+	6765 1040 6860 1040
+Wire Wire Line
+	6860 1040 6860 1090
+Wire Wire Line
+	6860 1090 6930 1090
+Connection ~ 6765 1040
+Wire Wire Line
+	4020 1380 4120 1380
+Wire Wire Line
+	4120 1380 4120 1425
+Connection ~ 4020 1380
+Wire Wire Line
+	4020 1380 4020 1340
+$Comp
+L Device:C_Small C1
+U 1 1 5D593A51
+P 4245 1380
+F 0 "C1" V 4016 1380 50  0000 C CNN
+F 1 "100nF" V 4107 1380 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4245 1380 50  0001 C CNN
+F 3 "~" H 4245 1380 50  0001 C CNN
+	1    4245 1380
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4145 1380 4120 1380
+Connection ~ 4120 1380
+Text GLabel 4430 1345 1    50   Input ~ 0
+GND
+Wire Wire Line
+	4345 1380 4430 1380
+Wire Wire Line
+	4430 1380 4430 1345
+NoConn ~ 3420 1725
+NoConn ~ 3420 3425
+NoConn ~ 3420 3525
+NoConn ~ 3420 3625
+NoConn ~ 3420 3725
+NoConn ~ 4620 4125
+NoConn ~ 4620 4025
+NoConn ~ 4620 3925
+NoConn ~ 4620 3825
+NoConn ~ 4620 3725
+NoConn ~ 4620 3625
+Text GLabel 6895 2170 0    50   Input ~ 0
+RESET
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5D5B070D
+P 7160 2170
+F 0 "J2" H 7210 2587 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7210 2496 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7160 2170 50  0001 C CNN
+F 3 "~" H 7160 2170 50  0001 C CNN
+	1    7160 2170
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6880 1970 6960 1970
+Wire Wire Line
+	6895 2170 6960 2170
+Wire Wire Line
+	6890 2270 6960 2270
+Wire Wire Line
+	6890 2370 6960 2370
+Wire Wire Line
+	7460 2370 7525 2370
+Wire Wire Line
+	7460 1970 7560 1970
+Wire Wire Line
+	7460 2070 7525 2070
+Wire Wire Line
+	7525 2070 7525 2170
+Connection ~ 7525 2370
+Wire Wire Line
+	7525 2370 7560 2370
+Wire Wire Line
+	7460 2170 7525 2170
+Connection ~ 7525 2170
+Wire Wire Line
+	7525 2170 7525 2270
+Wire Wire Line
+	7460 2270 7525 2270
+Connection ~ 7525 2270
+Wire Wire Line
+	7525 2270 7525 2370
+NoConn ~ 6960 2070
+NoConn ~ 4620 3125
+NoConn ~ 4620 3025
+NoConn ~ 4620 1725
+NoConn ~ 4620 1825
+NoConn ~ 4620 1925
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5D5EB740
+P 4955 3425
+F 0 "J3" H 4983 3401 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4983 3310 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4955 3425 50  0001 C CNN
+F 3 "~" H 4955 3425 50  0001 C CNN
+	1    4955 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4620 3425 4755 3425
+Wire Wire Line
+	4620 3525 4755 3525
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5D5F60A8
+P 4980 2725
+F 0 "J4" H 5008 2701 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5008 2610 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4980 2725 50  0001 C CNN
+F 3 "~" H 4980 2725 50  0001 C CNN
+	1    4980 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4620 2625 4780 2625
+Wire Wire Line
+	4620 2725 4780 2725
+Wire Wire Line
+	4620 2825 4780 2825
+Wire Wire Line
+	4620 2925 4780 2925
+$EndSCHEMATC
