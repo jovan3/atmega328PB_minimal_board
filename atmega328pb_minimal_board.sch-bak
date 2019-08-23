@@ -84,7 +84,7 @@ U 1 1 5D584701
 P 6915 3585
 F 0 "C3" H 7007 3631 50  0000 L CNN
 F 1 "22pF" H 7007 3540 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6915 3585 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6915 3585 50  0001 C CNN
 F 3 "~" H 6915 3585 50  0001 C CNN
 	1    6915 3585
 	1    0    0    -1  
@@ -95,7 +95,7 @@ U 1 1 5D5848D8
 P 7385 3585
 F 0 "C4" H 7477 3631 50  0000 L CNN
 F 1 "22pF" H 7477 3540 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7385 3585 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7385 3585 50  0001 C CNN
 F 3 "~" H 7385 3585 50  0001 C CNN
 	1    7385 3585
 	1    0    0    -1  
@@ -139,7 +139,7 @@ U 1 1 5D588FD5
 P 7180 4650
 F 0 "R1" H 7239 4696 50  0000 L CNN
 F 1 "10K" H 7239 4605 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 7180 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7180 4650 50  0001 C CNN
 F 3 "~" H 7180 4650 50  0001 C CNN
 	1    7180 4650
 	1    0    0    -1  
@@ -161,7 +161,7 @@ U 1 1 5D593A51
 P 4245 1380
 F 0 "C1" V 4016 1380 50  0000 C CNN
 F 1 "100nF" V 4107 1380 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4245 1380 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4245 1380 50  0001 C CNN
 F 3 "~" H 4245 1380 50  0001 C CNN
 	1    4245 1380
 	0    1    1    0   
@@ -224,7 +224,7 @@ U 1 1 5D60066D
 P 9305 1865
 F 0 "J3" H 9413 2746 50  0000 C CNN
 F 1 "Conn_01x16_Male" H 9413 2655 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9305 1865 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 9305 1865 50  0001 C CNN
 F 3 "~" H 9305 1865 50  0001 C CNN
 	1    9305 1865
 	1    0    0    -1  
@@ -235,7 +235,7 @@ U 1 1 5D604C09
 P 9305 3940
 F 0 "J4" H 9413 4821 50  0000 C CNN
 F 1 "Conn_01x16_Male" H 9413 4730 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9305 3940 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 9305 3940 50  0001 C CNN
 F 3 "~" H 9305 3940 50  0001 C CNN
 	1    9305 3940
 	1    0    0    -1  
@@ -456,4 +456,93 @@ Wire Wire Line
 	9505 4640 9590 4640
 Wire Wire Line
 	9505 4740 9590 4740
+Text GLabel 6595 910  1    50   Input ~ 0
+VCC
+Text GLabel 6595 1470 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R2
+U 1 1 5D7069A7
+P 6595 1075
+F 0 "R2" H 6654 1121 50  0000 L CNN
+F 1 "100 Ohm" H 6654 1030 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6595 1075 50  0001 C CNN
+F 3 "~" H 6595 1075 50  0001 C CNN
+	1    6595 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 5D706EDE
+P 6595 1325
+F 0 "D1" V 6641 1257 50  0000 R CNN
+F 1 "LED_Small" V 6550 1257 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6595 1325 50  0001 C CNN
+F 3 "~" V 6595 1325 50  0001 C CNN
+	1    6595 1325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6595 1470 6595 1425
+Wire Wire Line
+	6595 1225 6595 1175
+Wire Wire Line
+	6595 910  6595 975 
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D71343A
+P 7740 1220
+F 0 "SW1" H 7740 1505 50  0000 C CNN
+F 1 "Reset" H 7740 1414 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 7740 1420 50  0001 C CNN
+F 3 "~" H 7740 1420 50  0001 C CNN
+	1    7740 1220
+	1    0    0    -1  
+$EndComp
+Text GLabel 7455 1220 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	7455 1220 7540 1220
+Text GLabel 8050 1220 2    50   Input ~ 0
+GND
+Wire Wire Line
+	8050 1220 7940 1220
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D72459C
+P 7070 5590
+F 0 "J?" H 7042 5472 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7042 5563 50  0000 R CNN
+F 2 "" H 7070 5590 50  0001 C CNN
+F 3 "~" H 7070 5590 50  0001 C CNN
+	1    7070 5590
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D727F44
+P 7065 5960
+F 0 "J?" H 7037 5842 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7037 5933 50  0000 R CNN
+F 2 "" H 7065 5960 50  0001 C CNN
+F 3 "~" H 7065 5960 50  0001 C CNN
+	1    7065 5960
+	1    0    0    1   
+$EndComp
+Text GLabel 7310 5490 2    50   Input ~ 0
+PIN30
+Text GLabel 7310 5590 2    50   Input ~ 0
+PIN31
+Wire Wire Line
+	7310 5590 7270 5590
+Wire Wire Line
+	7270 5490 7310 5490
+Text GLabel 7310 5960 2    50   Input ~ 0
+MISO
+Text GLabel 7310 5860 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	7265 5860 7310 5860
+Wire Wire Line
+	7265 5960 7310 5960
 $EndSCHEMATC
