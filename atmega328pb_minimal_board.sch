@@ -508,23 +508,23 @@ GND
 Wire Wire Line
 	8050 1220 7940 1220
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J5
 U 1 1 5D72459C
 P 7070 5590
-F 0 "J?" H 7042 5472 50  0000 R CNN
+F 0 "J5" H 7042 5472 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7042 5563 50  0000 R CNN
-F 2 "" H 7070 5590 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7070 5590 50  0001 C CNN
 F 3 "~" H 7070 5590 50  0001 C CNN
 	1    7070 5590
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J1
 U 1 1 5D727F44
 P 7040 6180
-F 0 "J?" H 7012 6062 50  0000 R CNN
+F 0 "J1" H 7012 6062 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7012 6153 50  0000 R CNN
-F 2 "" H 7040 6180 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7040 6180 50  0001 C CNN
 F 3 "~" H 7040 6180 50  0001 C CNN
 	1    7040 6180
 	1    0    0    1   

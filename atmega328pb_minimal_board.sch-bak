@@ -521,28 +521,64 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5D727F44
-P 7065 5960
-F 0 "J?" H 7037 5842 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 7037 5933 50  0000 R CNN
-F 2 "" H 7065 5960 50  0001 C CNN
-F 3 "~" H 7065 5960 50  0001 C CNN
-	1    7065 5960
+P 7040 6180
+F 0 "J?" H 7012 6062 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7012 6153 50  0000 R CNN
+F 2 "" H 7040 6180 50  0001 C CNN
+F 3 "~" H 7040 6180 50  0001 C CNN
+	1    7040 6180
 	1    0    0    1   
 $EndComp
 Text GLabel 7310 5490 2    50   Input ~ 0
 PIN30
 Text GLabel 7310 5590 2    50   Input ~ 0
 PIN31
-Wire Wire Line
-	7310 5590 7270 5590
-Wire Wire Line
-	7270 5490 7310 5490
-Text GLabel 7310 5960 2    50   Input ~ 0
+Text GLabel 7285 6180 2    50   Input ~ 0
 MISO
-Text GLabel 7310 5860 2    50   Input ~ 0
+Text GLabel 7285 6080 2    50   Input ~ 0
 MOSI
 Wire Wire Line
-	7265 5860 7310 5860
+	7240 6080 7245 6080
 Wire Wire Line
-	7265 5960 7310 5960
+	7240 6180 7245 6180
+Text Notes 7720 5570 0    50   ~ 0
+USART0
+Text Notes 7685 6165 0    50   ~ 0
+USART1
+Text GLabel 7310 5385 2    50   Input ~ 0
+RXD
+Text GLabel 7310 5700 2    50   Input ~ 0
+TXD
+Text GLabel 7285 5975 2    50   Input ~ 0
+TXD1
+Text GLabel 7280 6290 2    50   Input ~ 0
+RXD1
+Wire Wire Line
+	7285 5975 7245 5975
+Wire Wire Line
+	7245 5975 7245 6080
+Connection ~ 7245 6080
+Wire Wire Line
+	7245 6080 7285 6080
+Wire Wire Line
+	7245 6180 7245 6290
+Wire Wire Line
+	7245 6290 7280 6290
+Connection ~ 7245 6180
+Wire Wire Line
+	7245 6180 7285 6180
+Wire Wire Line
+	7270 5490 7310 5490
+Wire Wire Line
+	7270 5590 7310 5590
+Wire Wire Line
+	7270 5385 7270 5490
+Wire Wire Line
+	7270 5385 7310 5385
+Connection ~ 7270 5490
+Wire Wire Line
+	7270 5590 7270 5700
+Wire Wire Line
+	7270 5700 7310 5700
+Connection ~ 7270 5590
 $EndSCHEMATC
